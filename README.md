@@ -27,10 +27,22 @@ $ go get github.com/sakajunquality/httr
 
 Usage
 ------------
+#### Normal output,
 ```
 $ httr example.com
 $ httr https://example.com
 $ httr https://example.com:443
+```
+
+#### JSON output,
+```
+$ httr -j example.com
+$ httr --json https://example.com
+```
+
+##### combination with jq
+```
+$ httr -j example.com | jq .
 ```
 
 
